@@ -175,5 +175,25 @@
             height: 650px;
         }
     }
+    /*editar mi cuenta*/
+    .primary-boton{
+        background-color: var(--white);
+        border: none;
+        border-radius: 16px;
+        height: 50px;
+        width: 100%;
+        color: var(--hospital-green);
+        cursor: pointer;
+        font-size: var(--md);
+        font-weight: bold;
+        font-family: 'Quicksand', sans-serif;
+        border: solid var(--hospital-green) 1px;
+     
+    }
+    .value{
+       color: var(--light-pink);
+       font-size: var(--md);
+       margin: 6px 0px 32px 0px;
+    }
 
    
