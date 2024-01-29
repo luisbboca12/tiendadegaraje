@@ -29,6 +29,7 @@
         width: 600px;
         justify-items: center;
         margin-bottom: 20px;
+       
     }
     .logo{
         width: 150px;
@@ -59,11 +60,13 @@
         height: 30px;
         font-size: var(--md);
         padding: 6px;
+        margin-bottom: 10px;
     }
     .pass{
         display: flex;
         flex-direction: column;
         width: 400px;
+        height: 100%;
 
     }
     .primary-button{
@@ -152,6 +155,25 @@
             margin-top: 110px;
         }
     }
+    /*my cuenta*/
+    .forms{
+        display: flex;
+        flex-direction: column;
+        
 
+    }
+    .titulo-mycuenta{
+        width: 400px;
+        text-align: start;
+        margin-bottom: 20px;
+    }
+    @media(width<=640px){
+        .pass{
+            justify-content: space-between;
+        }
+        .forms{
+            height: 650px;
+        }
+    }
 
    
