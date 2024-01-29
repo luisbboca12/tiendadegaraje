@@ -21,12 +21,14 @@
        color: #232830;
        display: grid;
        place-items: center;
+       align-content: center;
     }
     .form-container{
         display: grid;
         grid-template-rows: auto 1fr auto ;
         width: 600px;
         justify-items: center;
+        margin-bottom: 20px;
     }
     .logo{
         width: 150px;
@@ -61,7 +63,8 @@
     .pass{
         display: flex;
         flex-direction: column;
-        ;
+        width: 400px;
+
     }
     .primary-button{
         background-color: var(--hospital-green);
@@ -127,12 +130,27 @@
         border: 1px solid var(--hospital-green);
         border-radius: 16px;
         height: 50px;
-        width: 100%;
-        color: var(--white);
+        width: 400px;
+        color: var(--hospital-green);
         cursor: pointer;
         font-size: var(--md);
         font-weight: bold;
         font-family: 'Quicksand', sans-serif;
+       
+    }
+    @media(width<=640px){
+        .secondari-button{
+            margin-bottom: 20px;
+            margin-top: 20px;
+
+        }
+        .login{
+            align-content: space-between;
+
+        }
+        .form-container{
+            margin-top: 110px;
+        }
     }
 
 
