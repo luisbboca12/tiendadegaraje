@@ -1,0 +1,61 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm:14px;
+    --md:16px;
+    --lg:18px; 
+    }
+    
+    body{
+        margin: 0;
+        font-family: 'Quicksand', sans-serif;
+    }
+    /*etiqueta padre del menu desktop, en ella le ponemos un width de 100px, un H.auto para que se acople a dicho W., luego le ponemos un border de 1px, color gris oscuro, un pequeño border radius de 10px, y un padding general para dar separar a los list elements del margin(menos en el de abajo)*/  
+    .menu-desktop{
+        width: 100px; 
+        height: auto;
+        border: 1px solid var(--light-pink);
+        border-radius: 10px;
+        padding: 15px 15px 0px 15px;
+    }
+    /*le sacamos el estilo(puntos) a la lista desordenada y el padding y margin que tienen por defecto*/  
+    .menu-desktop ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+
+    }
+     /*cada li de ul lo alineamos al final con el T.A. end*/  
+    .menu-desktop ul li{
+        text-align: end;
+    }
+     /*ponemos al final de la clase "li:last-child" para solo agregarle un padding-top al ultimo li, como asi tambien un border-top */  
+    .menu-desktop ul li:last-child{
+        padding: 10px 0px 0px 0px ;
+        border-top: 1px solid var(--light-pink);
+
+    }
+     /*modificamos el ultimo li(a) y le sacamos el guion que tiene por defecto con el text-decoration:none*/  
+    .menu-desktop ul li:last-child a{
+        color: var(--hospital-green);
+        font-size: var(--sm);
+        text-decoration: none;
+        
+    }
+    /*modificamos los "a" restantes y ponemos un margin-bottom para separarlos uno de otros, para poder hacer eso tenemos que poner display:inline-block ya que es un elemento en linea y con esto sigue siendo en linea pero toma los atributos de uno de bloque*/
+    .menu-desktop ul li a{
+        color: var(--black);
+        font-size: var(--sm);
+        text-decoration: none;
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+    /* ponemos el weight bold a los li 1 y 2*/
+    .menu-desktop ul li:nth-child(1),
+    .menu-desktop ul li:nth-child(2){
+        font-weight: bold;
+    }

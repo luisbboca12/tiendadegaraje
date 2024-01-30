@@ -1,0 +1,47 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm:14px;
+    --md:16px;
+    --lg:18px; 
+    }
+    
+    body{
+        margin: 0;
+        font-family: 'Quicksand', sans-serif;
+    }
+    .mobile-menu{
+        margin: 0px 1px 0px 36px;
+    }
+    .mobile-menu h1{
+      font-size: var(--md);
+      font-weight: bold;
+    }
+    .mobile-menu ul{
+        list-style: none;
+        padding: 0px;
+
+    }
+    .mobile-menu ul li:nth-child(6){
+        margin-bottom: 90px;
+    }
+    .mobile-menu ul li{
+        margin-bottom: 30px;
+    }
+    .mobile-menu ul li:nth-child(8){
+        margin-bottom: 120px;
+
+
+    }
+    .mobile-menu ul li a{
+        text-decoration: none;
+        font-size: var(--sm);
+        font-weight: bold;
+        color: var(--black);
+    }
+
+
