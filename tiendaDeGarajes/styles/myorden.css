@@ -11,6 +11,92 @@
     }
     
     body{
-        margin: 0;
         font-family: 'Quicksand', sans-serif;
+    }
+    /*la caja principal, le ponemos un display grid para alinear la caja my orden container en el medio de la pagina*/
+    .my-orden{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        
+    }
+    /* */
+    
+   
+   /* esta es la caja donde esta todo el contenido, le ponemos un display grid, le damos al grid un template de filas y con tamaño auto 1fr y auto. luego le damos un ancho de 300px */
+    .my-orden-container{
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        width: 300px;
+        
+    }
+    .title{
+        font-size: var(--md);
+        margin-bottom: 40px;
+    }
+    /*aqui se encuentra tanto el acumulador de articulos, como los articulos individuales que voy agregandp, le ponemos un flex column para acomodarlos uno abajo del otro en columna */
+    .my-orden-content{
+     display: flex;
+     flex-direction: column;
+    }
+    /* en esta caja se encuentra el acumulador de la orden le poenemos un display grid colum y alineamos las dos culumnas con el template-column auto y 1fr, luego con el aling item la ponemos en el medio y con el gap damos un espaciado de 16px*/
+    .order{
+        background-color: var(--text-input-field);
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        margin-bottom: 24px;
+        padding: 0 24px;
+        gap: 16px;
+    }
+    /* al primer hijo de order le ponemos un display flex column para acomodar los dos spam un abajo del otro*/
+    .order p:nth-child(1){
+        display: flex;
+        
+        flex-direction: column;
+    }
+    /* a los spam de "p" le cambiamos la fuente segun como se ve en la pagina*/
+    .order p span:nth-child(1){
+        font-size: var(--md);
+        font-weight: bold;
+     }
+     .order p span:nth-child(2){
+        font-size: var(--sm);
+        color: var(--light-pink);
+     }
+    /*al segundo hijo(el precio) lo alineamos al final */
+    .order p:nth-child(2){
+        text-align: end;
+        font-weight: bold;
+    }
+    
+    /* esta caja es para las card del shopping cart, se le pone un display grid template column y con el primer valor en auto(imagen), el segundo le ponemos 1fr(Nombre del producto),al tercero auto(precio del producto),4to auto*/
+    .shopping-content {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: center;
+    }
+    
+ /* le sacamos el margin que tiene por defecto el figure*/
+    .shopping-content figure{
+        margin: 0;
+    }
+    
+/* configuramos el img dentro de figure, poniendole un object fit cover para que se acomode a la caja*/
+    .shopping-content figure img{
+        width: 70px;
+        height: 70px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    /* modificamos los dos p hijos como se ven en la pantalla*/
+    .shopping-content p:nth-child(2){
+        color: var(--light-pink);
+    }
+    .shopping-content p:nth-child(3){
+        font-weight: bold;
     }
