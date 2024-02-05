@@ -1,0 +1,95 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm:14px;
+    --md:16px;
+    --lg:18px; 
+    }
+    body{
+        font-family: 'Quicksand', sans-serif;
+    }
+    .menu{
+        display: none;
+    }
+    .logo{
+        width: 100px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 24px;
+        border-bottom: 0.5px solid var(--light-pink);
+        
+    }
+    .navbar-left{
+        display: flex;
+    }
+    
+    .navbar-left ul,
+    .navbar-rigth ul{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        height: 60px;
+    }
+    .navbar-left ul {
+        margin-left: 24px
+    }
+    .navbar-left ul li a ,
+    .navbar-rigth ul li a{
+        text-decoration: none;
+        color: var(--light-pink);
+        padding: 8px;
+        border: 1px solid var(--white);
+        border-radius: 8px;
+    }
+    .navbar-left ul li a:hover ,
+    .navbar-rigth ul li a:hover{
+        border: 1px solid var(--hospital-green);
+        color: var(--hospital-green);
+    }
+    .navbar-email{
+        font-size: var(--sm);
+        color: var(--light-pink);
+        margin-right: 16px;
+    }
+    .navbar-shopping-cart{
+        position: relative;
+    }
+    .navbar-rigth div{
+        background-color: var(--hospital-green);
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        font-size: var(--sm);
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 13px;
+        right: 24px;
+        align-items: center;
+    }
+    .navbar-email img{
+        margin-left: 6px;
+        transform: rotate(90deg);
+    }
+    @media(width<=940px){
+        .menu{
+            display: block;
+        }
+        .navbar-left ul{
+            display: none;
+        }
+        .navbar-email{
+            display: none;
+        }
+    }
+
+   
